@@ -6,7 +6,6 @@ html{
 }
 body{
     background:linear-gradient(to right top, rgb(85, 7, 7), #000 ) ;
-    backdrop-filter: blur(50px);
     color: #ffffff;
     min-height: 100vh;
     display: flex;
@@ -99,6 +98,7 @@ body::-webkit-scrollbar-thumb{
 .h1-titulo:nth-child(2) a{
     text-decoration: none;
     color: #202020;
+    animation: h1-onoff 1.5s linear alternate infinite; 
 }
 .h1-titulo:nth-child(2) a:hover{
     color: #f00;
@@ -106,6 +106,17 @@ body::-webkit-scrollbar-thumb{
     font-size: 6rem;
 }
 
+
+
+@keyframes h1-onoff{
+    from{
+        text-shadow:none;
+    }
+    to{
+        color: #f00;
+        text-shadow: 0 0 25px #f00;
+    }
+}
 
 
 
@@ -494,7 +505,7 @@ h2{
 
 /*LOGIN*/
 .body-login{
-    background-image: url(../img/Logo-fondo/fondo-login.jpg);
+    background-image: url(/img/Logo-fondo/fondo-login.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -557,17 +568,25 @@ h2{
     font-weight: 500;
 }
 .icon-i{
-
     font-size: 1.1rem;
     position: absolute;
-    left: 89%;
+    left: 86%;
     
+    padding: 5px;
     color: #ddd;
+}
+.fa-eye{
+    padding: 6px;
+    cursor: pointer;
+}
+.bx-pass{
+    cursor: pointer;
 }
 
 .label-check, .a-login, .register{
     font-size: .8rem;
     cursor: pointer;
+    user-select: none;
 }
 .label-check:hover{
     color: #fff9;
@@ -618,4 +637,17 @@ h2{
 .register{
     margin-top: 5px;
     text-align: center;
+}
+.volver-inicio{
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.volver-inicio a{
+    color:#ccc;
+}
+.volver-inicio a:hover{
+    color: #aaa;
 }

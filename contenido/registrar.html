@@ -11,33 +11,30 @@
 </head>
 
 <body class="body-login">
-
     <div class="container">
-        <div class="contenedor-iniciarsesion" id="contenedor-login">
-            <h1>Log in</h1>
+        <div class="contenedor-registrar" id="contenedor-register">
+            <h1>Register</h1>
             <form class="form">
                 <div class="input-i">
                     <input type="text" class="form-input" placeholder="Username" required>
-                    <i class="fa-regular fa-user icon-i"></i>
+                    <i class="fas fa-user icon-i"></i>
+                </div>
+                <div class="input-i">
+                    <input type="email" class="form-input"  placeholder="Email" required>
+                    <i class="fa-regular fa-envelope icon-i"></i>
                 </div>
                 <div class="input-i">
                     <input type="password" class="form-input" id="password-vernover" placeholder="Password" required>
                     <i class="fa-regular fa-eye-slash bx-pass icon-i"></i>
                 </div>
-                
-                <div class="forgot-pass">
-                    <div class="pass">
-                        <input type="checkbox" id="checkbox">
-                        <label for="checkbox" class="label-check">Remember me</label>
-                    </div>
-
-                    <a href="#" class="a-login">Forgot Password?</a>
+                <div class="pass">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="label-check">Remember me</label>
                 </div>
-
                 <div class="button-container">
-                    <button class="button-login">Enter</button>
+                    <button class="button-login">Create Account</button>
                 </div>
-                <p class="register">Don't have an account? <a href="/contenido/registrar.html" class="a-login">Register</a></p>
+                <p class="register">Do you have an account? <a href="/contenido/login.html" class="a-login">Log in</a></p>
                 <p class="volver-inicio"><a href="../index.html">go back</a></p>
             </form>
         </div>
