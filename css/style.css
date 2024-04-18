@@ -5,7 +5,8 @@ html{
     height: 100%;
 }
 body{
-    background:linear-gradient(to right top, rgb(85, 7, 7), #000 ) ;
+    background: rgb(121,9,9);
+    background: linear-gradient(90deg, rgba(121,9,9,1) 0%, rgba(2,0,38,1) 83%);
     color: #ffffff;
     min-height: 100vh;
     display: flex;
@@ -41,6 +42,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     background: #ffffff;
 }
 
@@ -50,7 +52,9 @@ body::-webkit-scrollbar-thumb{
     flex-direction: row;
     justify-content: center;
     text-align: center;
+
     bottom: 0;
+
     margin-bottom: 70px;
 }
 .button-ensi{
@@ -58,13 +62,17 @@ body::-webkit-scrollbar-thumb{
     padding-right: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
+
+
     font-size: 2em;
     color: #ffffff;
-    cursor:pointer;
+    
     border: #ff0000;
     border-radius: 10px;
     background-color: #ff0000;  
+
     bottom:0;  
+    cursor:pointer;
 }
 .button-ensi:hover{
     opacity: 50%;
@@ -100,11 +108,6 @@ body::-webkit-scrollbar-thumb{
     color: #202020;
     animation: h1-onoff 1.5s linear alternate infinite; 
 }
-.h1-titulo:nth-child(2) a:hover{
-    color: #f00;
-    text-shadow: 0 0 25px #f00;
-    font-size: 6rem;
-}
 
 
 
@@ -123,12 +126,14 @@ body::-webkit-scrollbar-thumb{
 /*Header*/
 
 .header{
-    background: transparent ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
+
+    
+    background: transparent ;
     border: solid #363636 1px;
     border-top: none;
     border-right: none;
@@ -137,6 +142,7 @@ body::-webkit-scrollbar-thumb{
 .header .logo img{
     height: 70px;
     width: 70px;
+
     transition: all 0.3s;
     background: none;
 }
@@ -178,10 +184,13 @@ body::-webkit-scrollbar-thumb{
     font-weight: 600;
     font-size: 1.05em;
     color: #eceff1;
+
     border: solid #eceff1 1px;
     padding: 9px 25px;
     background: none;
     border-radius: 50px;
+
+
     cursor: pointer;
     transition: all 0.1s ease 0s;
 }
@@ -191,6 +200,7 @@ body::-webkit-scrollbar-thumb{
     color: #000000;
     transform: scale(1.09);
 }
+
 
 @media screen and (max-width: 800px){
     .nav-links, .btn{
@@ -218,25 +228,31 @@ body::-webkit-scrollbar-thumb{
     z-index: 1;
     left: 0;
     top: 0;
-    background:linear-gradient(to right top, rgb(85, 7, 7), #000 );
+
+
+   background-color: #0003;
     backdrop-filter: blur(50px);
     overflow: hidden;
-    transition: all 0.3s ease 0s;
+
+    transition: all .1s linear;
 }
 .header .overlay .overlay-content{
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 .header .overlay a{
     padding: 15px;
-    font-size: 2.05em;
     display: block;
-    transition: all 0.3s ease 0s;
-    font-weight: 700;
+
+
+    font-size: 2.05em;
     color: #eceff1;
+    font-weight: 700;
+    
+
 }
 .header .overlay a:hover,
 .header .overlay a:focus{
@@ -244,10 +260,14 @@ body::-webkit-scrollbar-thumb{
 }
 .header .overlay .close{
     position: absolute;
+
+    font-size: 65px;
+
     top:20px;
     right: 5px;
-    font-size: 65px;
 }
+
+
 @media screen and (max-height:450px){
     .header .overlay a{
         font-size: 20px;
@@ -267,33 +287,42 @@ body::-webkit-scrollbar-thumb{
 /*Footer*/
 .pie-pagina{
     display: grid;
+
     border: solid #363636 1px;
     border-left: none;
     border-right:none;
     border-bottom: none;
-    background: transparent;
+
     min-width: 100%;
     margin-top: auto;
+
+    background: transparent;
     bottom: 0;
 }
 .pie-pagina .grupo-1{
     margin: 15px 0;
+
     text-align: center;
 }
 .pie-pagina .grupo-1 .red-social a{
     place-self: center;
     display: inline-block;
-    text-decoration: none;
     width: 45px;
     height: 45px;
+    margin-right: 10px;
+
+    
+    
     line-height: 45px;
     color: #ffffff;
-    margin-right: 10px;
-    font-size: 18px;
+    text-decoration: none;
+    font-size: 18px; 
+    text-align: center;
+    
+
+    border: 1px solid #ffffff;
     border-radius: 60px ;
     transition: 0.3s;
-    border: 1px solid #ffffff;
-    text-align: center;
     transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
@@ -303,9 +332,10 @@ body::-webkit-scrollbar-thumb{
 
 .grupo-2{
     background-color: transparent;
+    margin: 5px 0;
+
     color: #ffffff;
     text-align: center;
-    margin: 5px 0;
 }
 
 
@@ -316,11 +346,12 @@ body::-webkit-scrollbar-thumb{
 }
 .nav-link{
     padding: 15px 10px ;
-    font-weight: 550px;
     padding: 0;
     margin-left: 10px;
     margin-top: 10px;
     padding-left: 40px;
+
+    font-weight: 550px;    
 }
 .nav-link:hover{
        color: #ff0000;
@@ -347,17 +378,6 @@ h2{
 }
 
 
-/* FORMULARIO DE CONTACTO*/
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -369,11 +389,13 @@ h2{
     border-radius: 3.08px;
     width: 100%;
     height: auto;
+
     box-shadow: 0px 0px 30px #000000;
     transition: all 0.3s ease 0s;
 }
 .pilotos{
     border: solid #363636 1px;
+
     background-color: #0007;
     backdrop-filter: blur(10px);
 }
@@ -404,6 +426,7 @@ h2{
 }
 
 
+/*LOGOS DE EQUIPOS DE F1*/
 
 /* .red-bull{
     background-image: url(../img/logos/redbull.png);
@@ -476,14 +499,21 @@ h2{
 
 } */
 
+
+
+
+
 /* Juegos */
 .juego-1{
-    margin-left: 5px;
+
     top: 50%;
     right: 50%;
     width: 250px;
     height: 250px;
+
     font-size: 60px;
+    
+    margin-left: 5px;
     margin-bottom: 10px;
     margin-top: 5px;
 }
@@ -505,14 +535,18 @@ h2{
 
 /*LOGIN*/
 .body-login{
-    background-image: url(/img/Logo-fondo/fondo-login.jpg);
+    background-image: url(../img/Logo-fondo/fondo-login.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+
     font-family: 'Raleway', Helvetica, sans-serif;
 }
 
@@ -584,7 +618,7 @@ h2{
 }
 
 .label-check, .a-login, .register{
-    font-size: .8rem;
+    font-size: .9rem;
     cursor: pointer;
     user-select: none;
 }
@@ -641,8 +675,9 @@ h2{
 .volver-inicio{
     text-transform: uppercase;
     font-size: 15px;
-    width: 100%;
     text-align: center;
+
+    width: 100%;
     padding: 5px;
 }
 .volver-inicio a{
