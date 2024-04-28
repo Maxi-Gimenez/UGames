@@ -168,7 +168,7 @@ body::-webkit-scrollbar-thumb{
 .header .nav-links a{
     font-size: 1em;
     font-weight: 590;
-    color: #fffe;
+    color: #fffe; 
     text-shadow: 0 0 100px #fff;
 }
 .header .nav-links li a:hover{
@@ -230,7 +230,7 @@ body::-webkit-scrollbar-thumb{
     top: 0;
 
 
-   background-color: #0003;
+    background-color: #0006;
     backdrop-filter: blur(50px);
     overflow: hidden;
 
@@ -277,10 +277,6 @@ body::-webkit-scrollbar-thumb{
         top: 15px;
         right: 35px;
     }
-    
-
-
-
 }
 
 
@@ -502,45 +498,10 @@ h2{
 
 
 
-
-/* Juegos */
-.juego-1{
-
-    top: 50%;
-    right: 50%;
-    width: 250px;
-    height: 250px;
-
-    font-size: 60px;
-    
-    margin-left: 5px;
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-.juego-1 img{
-    width: 250px;
-    height: 250px;
-}
-.juego-1:hover{
-    opacity: 0.9;
-}
-.Juegos{
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-
-
-
-
 /*LOGIN*/
 .body-login{
-    background-image: url(../img/Logo-fondo/fondo-login.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+    background: rgb(121,9,9);
+    background: linear-gradient(90deg, rgba(121,9,9,1) 0%, rgba(2,0,38,1) 100%); 
 
     display: flex;
     justify-content: center;
@@ -588,14 +549,14 @@ h2{
     color: #fff;
     font-size: 18px;
     outline: none;
-    background-color: #0007;
+    background-color: #0002;
     border: 1px solid transparent;
     border-radius: 10px;
     backdrop-filter: blur(10px);
 }
 .form-input:focus{
-    background-color: #0009;
-    border: .5px solid #fff4;
+    background-color: #1112;
+    border: .5px solid #1112;
 }
 .form-input::placeholder{
     color: #dcdcdc;
@@ -685,4 +646,53 @@ h2{
 }
 .volver-inicio a:hover{
     color: #aaa;
+}
+
+/* contenedor juegos */
+.contenedor-juegos{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-juegos a{
+    text-decoration: none;
+}
+.contenedor-p-games{
+    width: 100%;
+    height: 98%;
+
+    position: absolute;
+    top: 0;
+    display: none;
+
+
+    background: linear-gradient(to top, #0009 30%, transparent);
+}
+.contenedor-games p{
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+
+    left: 25%;
+    top: 85%;
+
+    
+}
+
+.contenedor-games:hover .contenedor-p-games{
+    display: flex;
+}
+.contenedor-games {
+    position: relative;
+    margin: 20px;
+}
+.contenedor-juegos img{
+    width: 200px;
+    min-height: 200px;
+    filter: opacity(.8);
+
+    cursor: pointer;
 }
