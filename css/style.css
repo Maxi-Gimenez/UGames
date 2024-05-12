@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb{
 }
 .h1-titulo{
     display: inline-flex;
-    font-size: 7rem;
+    font-size: 6.7rem;
     text-shadow: 0 0 20px #fff;
     user-select: none;
 }
@@ -418,7 +418,7 @@ h2{
 .pilotos:hover{
     opacity: .9;
     transform: scale(1.03);
-    transform: translateY(-20px);
+    transform: translateY(-5px);
 }
 
 
