@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 body{
     background: rgb(121,9,9);
     background: linear-gradient(90deg, rgba(121,9,9,1) 0%, rgba(2,0,38,1) 83%);
     color: #ffffff;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 }
@@ -71,14 +69,17 @@ body::-webkit-scrollbar-thumb{
 
     bottom:0;  
     cursor:pointer;
+    
+    &:hover{
+        opacity: 50%;
+        padding-left: 102px;
+        padding-right: 102px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
+    
 }
-.button-ensi:hover{
-    opacity: 50%;
-    padding-left: 102px;
-    padding-right: 102px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-}
+
 
 
 
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb{
 
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
@@ -159,20 +160,18 @@ body::-webkit-scrollbar-thumb{
     display: inline-block;
     color: #c5b88d;
     padding: 0 20px;
+    
 }
-.header .nav-links li:hover{
-    transform: scale(1.1);
-}
+
 .header .nav-links a{
     font-size: 1em;
     font-weight: 590;
     color: #fffe; 
     text-shadow: 0 0 100px #fff;
-}
-.header .nav-links li a:hover{
-    color: #E6002B;
-    font-size: 1em;
-    font-weight: 700;
+
+    &:hover{
+        color: #E6002B;
+    }
 }
 .menu{
     display: none;
@@ -345,11 +344,13 @@ body::-webkit-scrollbar-thumb{
     margin-top: 10px;
     padding-left: 40px;
 
-    font-weight: 550px;    
+    font-weight: 550px; 
+    
+    &:hover{
+        color: #ff0000;
+ }
 }
-.nav-link:hover{
-       color: #ff0000;
-}
+
 .div-logo-nombre{
     display: flex;
     align-items: center;
@@ -373,209 +374,61 @@ h2{
 
 
 
-
-
-
-/** LOGIN*/
-.body-login{
-    background: rgb(121,9,9);
-    background: linear-gradient(90deg, rgba(121,9,9,1) 0%, rgba(2,0,38,1) 100%); 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-    font-family: 'Raleway', Helvetica, sans-serif;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-
-    color: #fff;
-    border: solid 0.5px #fff4;
-    border-radius: 15px;
-    background: #0001;
-    backdrop-filter: blur(5.5px);
-    width: 23rem;
-    min-height: 27rem;
-}
-
-
-.input-i{
-    width: 100%;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.form-input{
-    width: 100%;
-    height: 40px;
-
-    margin: 10px;
-    padding: 5px;
-    padding-right: 30px;
-
-
-    color: #fff;
-    font-size: 18px;
-    outline: none;
-    background-color: #0002;
-    border: 1px solid transparent;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-}
-.form-input:focus{
-    background-color: #1112;
-    border: .5px solid #1112;
-}
-.form-input::placeholder{
-    color: #dcdcdc;
-    font-weight: 500;
-}
-.icon-i{
-    font-size: 1.1rem;
-    position: absolute;
-    left: 86%;
-    
-    padding: 5px;
-    color: #ddd;
-}
-.fa-eye{
-    padding: 6px;
-    cursor: pointer;
-}
-.bx-pass{
-    cursor: pointer;
-}
-
-.label-check, .a-login, .register{
-    font-size: .9rem;
-    cursor: pointer;
-    user-select: none;
-}
-.label-check:hover{
-    color: #fff9;
-}
-.forgot-pass{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 10px 5px;
-    width: 100%;
-}
-.pass{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.pass> input{
-    margin-right: 5px;
-}
-.a-login{
-   color: #fffd;
-}
-.a-login:hover{
-    color: #fff8;
-}
-
-.button-login{
-    width: 250px;
-    height: 40px;
-
-    margin: 20px;
-    padding: 5px;
-
-    
-    color: #000;
-    font-size: 18px;
-    outline: none;
-    background-color: #fff9;
-    backdrop-filter: blur(5px);
-    border: 1px solid transparent;
-    border-radius: 50px;
-    cursor: pointer;
-}
-.button-login:hover{
-    opacity: .8;
-}
-.register{
-    margin-top: 5px;
-    text-align: center;
-}
-.volver-inicio{
-    text-transform: uppercase;
-    font-size: 15px;
-    text-align: center;
-
-    width: 100%;
-    padding: 5px;
-}
-.volver-inicio a{
-    color:#ccc;
-}
-.volver-inicio a:hover{
-    color: #aaa;
-}
-
-
 /** contenedor juegos */
 .contenedor-juegos{
+    height: 50dvh;
     display: flex;
-    margin: auto;
-    flex-wrap: wrap;
-
     justify-content: center;
     align-items: center;
-}
-.contenedor-juegos a{
-    text-decoration: none;
-}
-.contenedor-p-games{
-    width: 100%;
-    height: 98%;
-
-    position: absolute;
-    top: 0;
-    display: none;
 
 
-    background: linear-gradient(to top, #0009 30%, transparent);
-}
-.contenedor-games p{
-    display: inline-block;
-    position: absolute;
-    color: #fff;
-
-    left: 25%;
-    top: 85%;
-
-    
+    &>a{
+        color: #fff;
+        text-decoration: none
+    }
 }
 
-.contenedor-games:hover .contenedor-p-games{
-    display: flex;
-}
-.contenedor-games {
-    position: relative;
-    margin: 20px;
-}
-.contenedor-juegos img{
+.contenedor-elements-games{
+    background-color: #000;
+    height: 200px;
     width: 200px;
-    min-height: 200px;
-    filter: opacity(.8);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 
-    cursor: pointer;
+    &:hover{
+        opacity: .9;
+    }
 }
+.juegoFormula1{
+    background-image: url(../img/image-games/juego-f1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parrafo-item-name{
+    background-color: #0009;
+    border: solid 2px #fff9;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 40px;
+    width: 150px;
 
+
+}
+.AdvertenciaJuegos{
+    text-align: center;
+    margin: 20px;
+    font-size: 2rem;
+
+    &>span{
+        animation: h1-onoff 1.5s linear alternate infinite; 
+    }
+}
 
 /** BOTON DOWNLOAD */
 
