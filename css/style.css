@@ -15,7 +15,7 @@ body{
         hsl(81deg 86% 20%) 100%
       );    
     color: #ffffff;
-    min-height: 100dvh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
